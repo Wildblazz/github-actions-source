@@ -1,8 +1,8 @@
 name: UI_Smoke_Test_On_Demand
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+    types:
+      - my-custom-event
 
 jobs:
   tests-run:
