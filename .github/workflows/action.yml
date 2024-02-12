@@ -2,7 +2,7 @@ name: UI_Smoke_Test_On_Demand
 on:
   repository_dispatch:
     types:
-      - my-custom-event
+      - run_smoke
 
 jobs:
   tests-run:
