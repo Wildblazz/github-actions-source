@@ -16,3 +16,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Output Node.js setup ID
+        run: echo "id=${{ steps.set-up-node.outputs.id }}" >> $GITHUB_ENV
